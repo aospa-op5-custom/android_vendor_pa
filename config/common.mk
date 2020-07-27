@@ -74,6 +74,9 @@ $(call inherit-product-if-exists, vendor/partner_gms/products/gms.mk)
 $(call inherit-product-if-exists, vendor/partner_gms/products/turbo.mk)
 $(call inherit-product-if-exists, vendor/gapps/config.mk)
 
+# Add Arter's Lawnchair repo
+$(call inherit-product-if-exists, vendor/lawnchair/lawnchair.mk)
+
 # Do not preoptimize prebuilts when building GApps
 DONT_DEXPREOPT_PREBUILTS := true
 
